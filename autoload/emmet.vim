@@ -1670,7 +1670,7 @@ let s:emmet_settings = {
 \            'input:hidden': [{'type': 'hidden'}, {'name': ''}],
 \            'input:h': [{'type': 'hidden'}, {'name': ''}],
 \            'input:text': [{'type': 'text'}, {'name': ''}, {'id': ''}],
-\            'input:t': [{'type': 'text'}, {'name': ''}, {'id': ''}],
+\            'input:t': [{'type': 'text'}],
 \            'input:search': [{'type': 'search'}, {'name': ''}, {'id': ''}],
 \            'input:email': [{'type': 'email'}, {'name': ''}, {'id': ''}],
 \            'input:url': [{'type': 'url'}, {'name': ''}, {'id': ''}],
@@ -1710,6 +1710,11 @@ let s:emmet_settings = {
 \            'html:xml': [{'xmlns': 'http://www.w3.org/1999/xhtml'}, {'xml:lang': '${lang}'}],
 \        },
 \        'aliases': {
+\            'h': 'header',
+\            'f': 'footer',
+\            'n': 'nav',
+\            's': 'section',
+\            'it': 'input:t',
 \            'link:*': 'link',
 \            'meta:*': 'meta',
 \            'area:*': 'area',
@@ -1755,6 +1760,7 @@ let s:emmet_settings = {
 \        'expandos': {
 \            'ol': 'ol>li',
 \            'ul': 'ul>li',
+\            'nav': 'nav>ul>li',
 \            'dl': 'dl>dt+dd',
 \            'map': 'map>area',
 \            'table': 'table>tr>td',
